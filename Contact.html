@@ -2,7 +2,7 @@
 
 <html lang="es">
 <head runat="server">
-    <title><PortFolio> MyWarehouse </title>
+    <title><PortFolio> Mi Portfolio </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
@@ -10,24 +10,24 @@
     
         <nav class="navbar navbar-expand-lg navbar-dark " style ="background-color:rebeccapurple;margin:0;" >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">My Portfolio</a>
+    <a class="navbar-brand" href="#">Mi Portfolio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Default.html">Home</a>
+          <a class="nav-link " aria-current="page" href="Default.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="About.html">About</a>
+          <a class="nav-link" href="About.html">Sobre mi</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link" href="Proyects.html">My Proyects</a>
+          <a class="nav-link" href="Proyects.html">Mis Proyectos</a>
         </li>  
           
             <li class="nav-item">
-          <a class="nav-link" href="Contact.html">Contact</a>
+          <a class="nav-link" href="Contact.html">Contacto</a>
         </li> 
       
       </ul>
@@ -39,23 +39,28 @@
      <div id="full" style="margin-top:5%;margin-bottom:5%;height :100%;width : 60%;color : azure; backdrop-filter: blur(40px);border: 2px solid  #000000;">
         <center>
        
-        <h1> Contact me !</h1>
+        <h1> Contactame !</h1>
+        <P>Te estare respondiendo al mail que ingreses a la brevedad.</P>
           </center>  
          
      <div class="d-flex justify-content-center"style="margin-top:10%;margin-bottom:10%">
        
           
-     <div class="col-8">
-     <div class="mb-3">
-   <label for="exampleFormControlInput1" class="form-label">Email address</label>
-   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="margin:0">
- </div>
- <div class="mb-3">
-   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="margin:0"></textarea>
- </div>
-         </div>
-              
+      <form action="enviar_correo.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+    
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required><br><br>
+    
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+    
+        <input type="submit" value="Enviar">
+    </form>
          
    
            </div> 
@@ -66,7 +71,8 @@
  
      <footer>
         <center>
-             <p>&copy; 2023 - Mi aplicación ASP.NET</p>
+          <p>&copy; 2023 - Mi PortFolio</p>
+        
         </center>
                 
     </footer>
