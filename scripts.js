@@ -2,8 +2,8 @@ function cambiarImagenes(numero) {
   // Obtener el elemento del carrusel por su ID
   var carrusel = document.getElementById('miCarousel');
 
-  // Obtener todas las imágenes activas del carrusel dentro del elemento del carrusel
-  var imagenes = carrusel.querySelectorAll('.carousel-item.active img');
+  // Obtener todas las imágenes del carrusel dentro del elemento del carrusel
+  var imagenes = carrusel.querySelectorAll('.carousel-item img');
 
   // Definir las rutas de las imágenes para cada conjunto (1 al 4)
 
@@ -37,3 +37,4 @@ function cambiarImagenes(numero) {
     console.error('Número no válido. Debe estar entre 1 y 4.');
   }
 }
+  
