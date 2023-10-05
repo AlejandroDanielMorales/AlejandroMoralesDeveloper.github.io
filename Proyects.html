@@ -14,6 +14,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -62,23 +63,20 @@
           <hr>
 
 
-          <ul class="navbar-nav" style="height:100%;text-align: right;">
+          <div id="navbarbnav" style="height:100%;text-align: right;">
 
-            <li class="nav-item" style=" margin-top:60%;">
-              <a class="nav-link" href="About.aspx">Cardjitsu Game</a>
-            </li>
-            <li class="nav-item" style="margin:5%;">
-              <a class="nav-link" href="Proyectos.aspx">Nonox Game</a>
-            </li>
+            <label class="nav-link" style="margin-top:30%;margin-bottom: 15%;" onclick="cambiarImagenes(1)">Cardjitsu Game</label>
+           <hr>
+           
+              <label class="nav-link" style="margin-top:15%;margin-bottom:15%;" onclick="cambiarImagenes(2)">Nonox Game</label>
+              <hr>
+           
+              <label class="nav-link" style="margin-top:15%;margin-bottom:15%;" onclick="cambiarImagenes(3)">Catalog Management</label>
+            
+              <hr>
+              <label class="nav-link" style="margin-top:15%;margin-bottom:30%;"  onclick="cambiarImagenes(4)">Coming soon</label>
 
-            <li class="nav-item" style="margin:5%;">
-              <a class="nav-link" href="Contact.aspx">Catalog Managment</a>
-            </li>
-            <li class="nav-item" style="margin-bottom:60%;">
-              <a class="nav-link " href="Default.aspx">Virtual Shopping</a>
-            </li>
-
-          </ul>
+          </div>
 
           <hr>
           <div class="dropdown">
@@ -97,7 +95,7 @@
 
 
 
-        <div id="carouselExample" class="carousel slide">
+        <div id="miCarousel"class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Nonox1.png" class="d-block w-100" alt="...">
