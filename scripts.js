@@ -18,27 +18,27 @@ function cambiarImagenes(numero) {
       // Actualizar las rutas de las imágenes en el carrusel
       switch (numero){
           case 1 : 
-              imagenes[0].src = conjuntosImagenes[0][0];
-              imagenes[1].src = conjuntosImagenes[0][1];
-              imagenes[2].src = conjuntosImagenes[0][2];
-              
-              break;
-          case 2: 
               imagenes[0].src = conjuntosImagenes[1][0];
               imagenes[1].src = conjuntosImagenes[1][1];
               imagenes[2].src = conjuntosImagenes[1][2];
               
               break;
-          case 3: 
+          case 2: 
               imagenes[0].src = conjuntosImagenes[2][0];
-              imagenes[1].src = conjuntosImagenes[2][1];
+              imagenes[1].src = conjuntosImagenes[2[1];
               imagenes[2].src = conjuntosImagenes[2][2];
-              
+             
               break;
-          case 4: 
+          case 3: 
               imagenes[0].src = conjuntosImagenes[3][0];
               imagenes[1].src = conjuntosImagenes[3][1];
               imagenes[2].src = conjuntosImagenes[3][2];
+              
+              break;
+          case 4: 
+              imagenes[0].src = conjuntosImagenes[4][0];
+              imagenes[1].src = conjuntosImagenes[4][1];
+              imagenes[2].src = conjuntosImagenes[4][2];
               
               
               break;
