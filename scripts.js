@@ -25,7 +25,7 @@ function cambiarImagenes(numero) {
               break;
           case 2: 
               imagenes[0].src = conjuntosImagenes[2][0];
-              imagenes[1].src = conjuntosImagenes[2[1];
+              imagenes[1].src = conjuntosImagenes[2][1];
               imagenes[2].src = conjuntosImagenes[2][2];
              
               break;
