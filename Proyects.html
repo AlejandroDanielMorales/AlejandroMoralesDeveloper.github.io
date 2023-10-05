@@ -118,7 +118,26 @@
         </div>
 </div>
 
+<style>
+  .transition-opacity {
+    transition: opacity 1s ease-in-out; /* Aquí defines la duración y el efecto de la transición */
+  }
+</style>
+        <script>
+  function transicionOpacidad() {
+    var carruselContainer = document.getElementById('miCarousel');
+    carruselContainer.classList.add('transition-opacity');
 
+    // Espera un período de tiempo más largo para que la transición se complete
+    setTimeout(function() {
+      // Realiza los cambios en el carrusel
+      // ...
+
+      // Elimina la clase de transición para futuras animaciones
+      carruselContainer.classList.remove('transition-opacity');
+    }, 500); // Ajusta el tiempo de espera según la duración de tu transición (en milisegundos)
+  }
+        </script>
 
 
       </div>
