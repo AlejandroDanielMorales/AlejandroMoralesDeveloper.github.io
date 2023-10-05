@@ -16,8 +16,33 @@ function cambiarImagenes(numero) {
     // Verificar si el número está dentro del rango válido (1-4)
     if (numero >= 1 && numero <= 4) {
       // Actualizar las rutas de las imágenes en el carrusel
-      for (var i = 0; i < imagenes.length; i++) {
-        imagenes[i].src = conjuntosImagenes[numero][i];
+      switch (numero){
+          case 1 : 
+              imagenes[0].src = conjuntosImagenes[0][0];
+              imagenes[1].src = conjuntosImagenes[0][1];
+              imagenes[2].src = conjuntosImagenes[0][2];
+              
+              break;
+          case 2: 
+              imagenes[0].src = conjuntosImagenes[1][0];
+              imagenes[1].src = conjuntosImagenes[1][1];
+              imagenes[2].src = conjuntosImagenes[1][2];
+              
+              break;
+          case 3: 
+              imagenes[0].src = conjuntosImagenes[2][0];
+              imagenes[1].src = conjuntosImagenes[2][1];
+              imagenes[2].src = conjuntosImagenes[2][2];
+              
+              break;
+          case 4: 
+              imagenes[0].src = conjuntosImagenes[3][0];
+              imagenes[1].src = conjuntosImagenes[3][1];
+              imagenes[2].src = conjuntosImagenes[3][2];
+              
+              
+              break;
+              
       }
     } else {
       // En caso de que el número esté fuera del rango, mostrar un mensaje de error
