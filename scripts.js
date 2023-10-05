@@ -45,5 +45,5 @@ function cambiarImagenes(numero) {
 
     // Eliminar la clase CSS para la transición de opacidad
     carouselDiv.classList.remove('fade-out');
-  }, 500); // Cambia este valor para ajustar la duración de la transición (en milisegundos)
+  }, 2000); // Cambia este valor para ajustar la duración de la transición (en milisegundos)
 }
