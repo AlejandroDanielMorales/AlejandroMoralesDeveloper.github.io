@@ -38,12 +38,14 @@ function cambiarImagenes(numero) {
           imagenes[2].setAttribute('src', 'cManager4.png');
           break;
       }
+
+      // Eliminar la clase CSS para la transición de opacidad
+      setTimeout(function () {
+        carouselDiv.classList.remove('fade-out');
+      }, 10); // Ajusta el tiempo aquí para asegurarte de que la clase se elimine correctamente
     } else {
       // En caso de que el número esté fuera del rango, mostrar un mensaje de error
       console.error('Número no válido. Debe estar entre 1 y 4.');
     }
-
-    // Eliminar la clase CSS para la transición de opacidad
-    carouselDiv.classList.remove('fade-out');
-  }, 2000); // Cambia este valor para ajustar la duración de la transición (en milisegundos)
-}
+  }, 1000); // Cambia este valor para ajustar la duración de la transición (en milisegundos)
+                                   }
