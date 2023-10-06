@@ -1,3 +1,25 @@
+function escribirEnPantalla(texto){
+   let arr=texto.split("");
+   let i=0;
+   let intervalo= setInterval(function(){
+    if(i==arr.length-1){ 
+      document.getElementById("texto-descripcion").innerHTML+=arr[i];
+      clearInterval(intervalo);} 
+    else {
+    if(arr[i]==" "){
+     document.getElementById("texto-descripcion").innerHTML+=arr[i];
+     document.getElementById("texto-descripcion").innerHTML+=arr[i+1];
+      i+=2;
+    }else{
+    document.getElementById("texto-descripcion").innerHTML+=arr[i];
+    i++;
+      }
+    }
+  },500); 
+}
+
+
+
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
   var imagenes = carrusel.querySelectorAll('.carousel-item img');
@@ -35,6 +57,7 @@ function cambiarImagenes(numero) {
         descripcion.textContent ='Aplicacion de e-commerce (aun en desarrollo), es una api de compra venta de articulos, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net '
         break;
     }
-    console.error('Número no válido. Debe estar entre 1 y 4.');
+    escribirEnPantalla(titulo.textContent);
   }
 }
+ 
