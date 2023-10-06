@@ -34,7 +34,7 @@ var auxdes="";
         imagenes[1].setAttribute('src', 'Cardjitsu3.png');
         imagenes[2].setAttribute('src', 'Cardjitsu2.png');
         auxdes = "Cartjitsu fue el primer juego que programe,un juego de cartas en consola usando lenguaje C++ y libreria rlutil aplicando programacion procedural y utilizando solo funciones.";
-        descripcion.textContent=escribirEnPantalla(descripcion.textContent);
+        descripcion.textContent=escribirEnPantalla(auxdes);
           break;
       case 2:
         titulo.textContent='Nonox Game';
@@ -42,7 +42,7 @@ var auxdes="";
         imagenes[1].setAttribute('src', 'Nonox2.png');
         imagenes[2].setAttribute('src', 'Nonox3.png');
         auxdes="Un juego tipo , buscaminas/nonograma y de memoria,Fue programado utilizando C++ , el mismo tiene 3 niveles y puntaje que perdura en disco duro.";
-        descripcion.textContent=escribirEnPantalla(descripcion.textContent);
+        descripcion.textContent=escribirEnPantalla(auxdes);
           break;
       case 3:
         titulo.textContent='Catalog Management';
