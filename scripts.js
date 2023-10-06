@@ -1,7 +1,7 @@
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
   var imagenes = carrusel.querySelectorAll('.carousel-item img');
-  var descripcion = document.getElementById('Descripcion');
+  var descripcion = document.getElementById('texto-descripcion');
   if (numero >= 1 && numero <= 4) {
     switch (numero) {
       case 1:
