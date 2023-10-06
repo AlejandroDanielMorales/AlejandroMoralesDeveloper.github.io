@@ -5,9 +5,9 @@ function cambiarImagenes(numero) {
   if (numero >= 1 && numero <= 4) {
     switch (numero) {
       case 1:
-        imagenes[0].setAttribute('src', 'https://thumbs.dreamstime.com/b/transparent-pattern-background-simulation-alpha-channel-png-seamless-gray-white-squares-vector-design-grid-162521286.jpg?w=450');
-        imagenes[1].setAttribute('src', 'https://thumbs.dreamstime.com/b/transparent-pattern-background-simulation-alpha-channel-png-seamless-gray-white-squares-vector-design-grid-162521286.jpg?w=450');
-        imagenes[2].setAttribute('src', 'https://thumbs.dreamstime.com/b/transparent-pattern-background-simulation-alpha-channel-png-seamless-gray-white-squares-vector-design-grid-162521286.jpg?w=450');
+        imagenes[0].setAttribute('src', 'Cardjitsu1.png');
+        imagenes[1].setAttribute('src', 'Cardjitsu3.png');
+        imagenes[2].setAttribute('src', 'Cardjitsu2.png');
         descripcion.textContent = 'Cartjitsu fue el primer juego que programe,un juego de cartas en consola usando lenguaje C++ y libreria rlutil,que programe aplicando programacion procedural y utilizando solo funciones.';
         break;
       case 2:
