@@ -15,7 +15,7 @@ function escribirEnPantalla(texto){
     i++;
       }
     }
-  },500); 
+  },100); 
 }
 
 
