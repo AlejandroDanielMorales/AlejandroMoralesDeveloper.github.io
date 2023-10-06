@@ -57,7 +57,7 @@ function cambiarImagenes(numero) {
         descripcion.textContent ='Aplicacion de e-commerce (aun en desarrollo), es una api de compra venta de articulos, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net '
         break;
     }
-    escribirEnPantalla(titulo.textContent);
+    escribirEnPantalla(descripcion.textContent);
   }
 }
  
