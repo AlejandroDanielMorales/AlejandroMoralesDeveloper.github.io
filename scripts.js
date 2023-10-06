@@ -8,7 +8,7 @@ function cambiarImagenes(numero) {
         imagenes[0].setAttribute('src', 'Cardjitsu1.png');
         imagenes[1].setAttribute('src', 'Cardjitsu3.png');
         imagenes[2].setAttribute('src', 'Cardjitsu2.png');
-        descripcion.textContent = 'Cartjitsu fue el primer juego que programe,un juego de cartas en consola usando lenguaje C++ y libreria rlutil,que programe aplicando programacion procedural y utilizando solo funciones.';
+        descripcion.textContent = 'Cartjitsu fue el primer juego que programe,un juego de cartas en consola usando lenguaje C++ y libreria rlutil aplicando programacion procedural y utilizando solo funciones.';
         break;
       case 2:
         imagenes[0].setAttribute('src', 'Nonox1.png');
