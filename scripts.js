@@ -25,7 +25,20 @@ function escribirEnPantalla(texto, callback) {
     }
   }, 75);
 }
+function animacionDescripcion() {
+  const texto = "Texto con efecto de tipeo."; // El texto que deseas mostrar
+  const parrafo = document.querySelector('p'); // Obtener el elemento <p> donde se mostrará el texto
+  let i = 0;
 
+  const intervalo = setInterval(function () {
+    if (i === texto.length) {
+      clearInterval(intervalo);
+    } else {
+      parrafo.innerHTML += texto.charAt(i);
+      i++;
+    }
+  }, 75);
+}
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
   var imagenes = carrusel.querySelectorAll('.carousel-item img');
