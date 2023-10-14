@@ -25,26 +25,20 @@ function escribirEnPantalla(texto, callback) {
     }
   }, 75);
 }
-function efectoTipeo() {
-  const texto = "Soy un estudiante apasionado de programación con habilidades en programación orientada a objetos, bases de datos y desarrollo web y de escritorio. 
-              Actualmente, trabajo en mantenimiento logístico mientras curso mi segundo año de Técnico Universitario en Sistemas Informáticos en la Facultad de Tecnología de la UTN. Mi enfoque en la tecnología y la informática me ha permitido contribuir al mejoramiento de procesos logísticos,
-              y mi formación académica me brinda una base sólida para seguir creciendo como profesional.
-              Estoy entusiasmado por lo que depara el futuro en el mundo de la tecnología y ansío continuar desarrollándome en este campo apasionante."; // El texto que deseas mostrar
-  const elemento = document.getElementById('MyDescription'); // Obtener el elemento con ID MyDescription
+function animacionDescripcion() {
+  const texto = "Texto con efecto de tipeo."; // El texto que deseas mostrar
+  const parrafo = document.querySelector('p'); // Obtener el elemento <p> donde se mostrará el texto
   let i = 0;
 
   const intervalo = setInterval(function () {
     if (i === texto.length) {
       clearInterval(intervalo);
     } else {
-      elemento.innerHTML += texto.charAt(i);
+      parrafo.innerHTML += texto.charAt(i);
       i++;
     }
   }, 75);
 }
-
-// Llamar a la función al cargar la página
-window.onload = efectoTipeo;
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
   var imagenes = carrusel.querySelectorAll('.carousel-item img');
