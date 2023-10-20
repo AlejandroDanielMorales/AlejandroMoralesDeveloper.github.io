@@ -26,7 +26,7 @@ function escribirEnPantalla(texto, callback) {
   }, 75);
 }
 function escribirSobreMi() {
-  var parrafo = document.getElementById("texto-descripcion1");
+  var parrafo = document.getElementById("texto-descripcion");
   const texto = "Texto con efecto de tipeo.";
   parrafo.innerHTML = escribirEnPantalla(texto);
 }
