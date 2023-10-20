@@ -30,6 +30,7 @@ function escribirSobreMi() {
   const texto = "Texto con efecto de tipeo.";
   parrafo.innerHTML = escribirEnPantalla(texto);
 }
+
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
   var imagenes = carrusel.querySelectorAll('.carousel-item img');
