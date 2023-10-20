@@ -25,19 +25,9 @@ function escribirEnPantalla(texto, callback) {
     }
   }, 75);
 }
-function animacionDescripcion() {
+function escribirSobreMi() {
   const texto = "Texto con efecto de tipeo."; // El texto que deseas mostrar
-  const parrafo = document.querySelector('p'); // Obtener el elemento <p> donde se mostrará el texto
-  let i = 0;
-
-  const intervalo = setInterval(function () {
-    if (i === texto.length) {
-      clearInterval(intervalo);
-    } else {
-      parrafo.innerHTML += texto.charAt(i);
-      i++;
-    }
-  }, 75);
+  escribirEnPantalla(texto);
 }
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
