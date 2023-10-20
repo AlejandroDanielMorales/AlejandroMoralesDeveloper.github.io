@@ -26,8 +26,9 @@ function escribirEnPantalla(texto, callback) {
   }, 75);
 }
 function escribirSobreMi() {
-  const texto = "Texto con efecto de tipeo."; // El texto que deseas mostrar
-  escribirEnPantalla(texto);
+  var parrafo = document.getElementById("texto-descripcion1");
+  const texto = "Texto con efecto de tipeo.";
+  parrafo.innerHTML = escribirEnPantalla(texto);
 }
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
