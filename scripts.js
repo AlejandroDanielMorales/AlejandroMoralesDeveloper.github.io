@@ -27,11 +27,35 @@ function escribirEnPantalla(texto, callback) {
 }
 function escribirSobreMi() {
   var parrafo = document.getElementById("texto-descripcion");
-  var texto = "Texto con efecto de tipeo.";
-  parrafo.innerHTML = escribirEnPantalla(texto);
-  return;
-}
+  parrafo.innerHTML = "";
+  var texto = 
+  '\tHola Mundo !, Soy Alejandro Morales\n' +
+  '\tDe 28 años\n' +
+  '\tSoy un Estudiante de  la carrera de Tecnicatura Universitaria en Programación en la \n' +
+  '\tUTN Facultad Regional General Pacheco. Actualmente, me encuentro cursando mi segundo de tres \n' +
+  '\taños con el objetivo de obtener el título de Técnico Universitario en Sistemas Informáticos\n' +
+  '\tCon una sólida formación académica, he adquirido conocimientos fundamentales en programación,\n' +
+  '\tabarcando desde los conceptos básicos hasta temas avanzados.\n' +
+  '\t\n' +
+  '\tConocimientos:\n' +
+  '\t- Fundamentos de la programación\n' +
+  '\t- Programación procedural\n' +
+  '\t- Programación orientada a objetos\n' +
+  '\t- Programación orientada a eventos\n' +
+  '\t- Desarrollo en capas\n' +
+  '\t- Diseño de interfaces\n' +
+  '\t- Manejo de excepciones\n' +
+  '\t- Desarrollo de programas de escritorio y web.\n' +
+  '\t- Creación y manipulación de bases de datos  de Modelo relacional y normalizadas.\n'+
+  '\t\n' +
+  '\t- Lenguajes de programación y entornos:\n' +
+'\t- - HTML | CSS | JavaScript | C# | C++ | T-SQL \n' +
+'\t- - Experiencia en el framework .NET (Ado.Net, ASP.Net, Winforms, Webforms)\n' +
+'\t- - SQL Server y SQL Management Studio\n';
+  document.getElementById("texto-descripcion").textContent = escribirEnPantalla(texto, function () {
 
+  });
+}
 function cambiarImagenes(numero) {
   var carrusel = document.getElementById('miCarousel');
   var imagenes = carrusel.querySelectorAll('.carousel-item img');

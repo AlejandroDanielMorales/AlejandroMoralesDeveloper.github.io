@@ -6,6 +6,8 @@
   <title>
     <PortFolio> Mi Portfolio Web
   </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles2.css" type="text/css" media="all">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -14,7 +16,7 @@
   <script src="scripts.js"></script>
 </head>
 
-<body>
+<body  onload="escribirSobreMi()">
 
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:rebeccapurple;margin:0;">
     <div class="container-fluid">
@@ -48,10 +50,9 @@
         
       
         <center>
-            <h1 style="color:azure">Alejandro Morales</h1>
-          
+            <h1 style="color:azure">Alejandro Morales</h1> 
           <hr>
-          <p id="texto-descripcion"></p>
+
           <div class="perfil-circle"
             style="width: 10%;height: 80%;border-radius: 50%;overflow: hidden;margin: 0 auto;border: 2px solid azure;">
             <img src="ALE.jpeg" alt="Tu foto" style=" width: 100%;height: 100%;object-fit: cover;">
@@ -59,29 +60,17 @@
         <h3 style="color:azure">Sobre mi</h3>
           </center>
           <hr>
+        <div id="aboutGlobal">
+    <div id="computer">
+      <p><pre id="texto-descripcion"></pre></p>
+    </div>
+  </div>
+          
+     
 
-       
-   
-   
-  
-      
-      <div id="aboutGlobal">
-  
-      <div id="computer" style="height:800px;width:90%;background-image: url('Dell_Inspiron_One_23_Touch_AIO_Desktop_PC.png');color:azure;background-size: contain; background-repeat: no-repeat;margin-left:10%;">
-        <div id = "Presentacion" style="height:60%;width:90%;margin-top:5%;">
-          <center>
-            <h1 >Quien soy</h1>
-
-            
-           
-        </div>
-      </center>
-      </div>
-        
-
-<div class="tabla" style="display: flex; flex-wrap: wrap; gap: 10px;margin-left:20%;">
-    <div class="fila" style="display: flex; width: 60%;">
-        <div class="columna" style="display: flex; width: 60%;">
+<div class="tabla" style="display: flex; flex-wrap: wrap; gap: 10px;margin-left:15%;">
+    <div class="fila" style="display: flex; width: 60%;;margin-bottom:15%;">
+        <div class="columna" style="display: flex; width: 70%;">
             
           <div class="contenido" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
@@ -115,13 +104,8 @@
                 </svg>
             </div>
         </div>
-    </div>
-</div>
 
-
- <div class="tabla" style="display: flex; flex-wrap: wrap; gap: 10px;margin-left:20%;">
-    <div class="fila" style="display: flex; width: 60%;">
-        <div class="columna" style="display: flex; width: 60%;">
+        <div class="columna" style="display: flex; width: 70%;">
          
             <div class="contenido" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
@@ -161,7 +145,7 @@
     <!-- Repite esto para cada fila -->
 </div>
 
-
+</div>
 
 
   <footer style="background-color:rebeccapurple;">

@@ -1,0 +1,30 @@
+#texto-descripcion {
+    margin-top:430px;
+    color: azure;
+    font-size: 15px;
+    font-family: Consolas, monaco, monospace;
+    height: 900px;
+    width: 1600px;
+    margin-left: 370px;
+    
+  }
+    #aboutGlobal {
+      height: 100%;
+      width: 100%;
+      margin-left: 100px;
+    }
+
+    #computer {
+      height: 1700px;
+      width: 4100px;
+      margin-top: -300px;
+      margin-bottom: -300px;
+      margin-left: -200px;
+      background-image: url('CompuPng.png');
+      color: azure;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+    }
+
