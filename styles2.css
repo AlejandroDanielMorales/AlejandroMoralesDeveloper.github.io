@@ -10,17 +10,15 @@
 }
 
     #computer {
-    height: 1700px;
-    width: 4100px;
-    background-image: url('CompuPng.png');
-    color: azure;
-    background-size: contain;      /* Mantiene la proporción de la imagen sin recortarla */
-    background-position: center;   /* Centra la imagen */
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    justify-content: center;       /* Centra horizontalmente el contenido flex */
-    align-items: center;           /* Centra verticalmente el contenido flex */
+      margin-top: -300px;
+      margin-bottom: -300px;
+      margin-left: -200px;
+      background-image: url('CompuPng.png');
+      color: azure;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;           /* Centra verticalmente el contenido flex */
     }
 #MyBackgroud {
     margin-top:5%;
