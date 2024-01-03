@@ -15,7 +15,7 @@
       margin-left: -200px;
       background-image: url('CompuPng.png');
       color: azure;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       position: relative;
       display: flex;           /* Centra verticalmente el contenido flex */
