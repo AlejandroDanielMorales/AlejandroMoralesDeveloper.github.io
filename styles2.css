@@ -1,9 +1,11 @@
 #texto-descripcion {
     margin-top:5%;
     color: azure;
-    font-size: 1.5%;
+    font-size: 5px;
     font-family: Consolas, monaco, monospace;
     margin-left: 5%;
+    height:60%;
+    
     
 }
 
