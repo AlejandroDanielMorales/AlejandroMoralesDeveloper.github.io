@@ -13,14 +13,15 @@
       margin-top: -30%;
       margin-bottom: -20%;
       margin-left: -37%;
-      margin-right: -20%;
+      margin-right: -10%;
       background-image: url('CompuPng.png');
       color: azure;
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
-      display: flex;           /* Centra verticalmente el contenido flex */
+      display: flex;          
     }
+
 #MyBackgroud {
     margin-top:5%;
     margin-bottom:5%;
