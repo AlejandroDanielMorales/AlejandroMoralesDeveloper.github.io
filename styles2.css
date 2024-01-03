@@ -10,9 +10,9 @@
 }
 
     #computer {
-      margin-top: -300px;
-      margin-bottom: -300px;
-      margin-left: -200px;
+      margin-top: -30%;
+      margin-bottom: -30%;
+      margin-left: -20%;
       background-image: url('CompuPng.png');
       color: azure;
       background-size: cover;
