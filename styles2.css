@@ -12,7 +12,9 @@
     #computer {
       margin-top: -30%;
       margin-bottom: -30%;
-      margin-left: -20%;
+      margin-left: -15%;
+      margin-right: 0%;
+      width: 100%;
       background-image: url('CompuPng.png');
       color: azure;
       background-size: cover;
