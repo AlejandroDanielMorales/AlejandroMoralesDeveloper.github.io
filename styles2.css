@@ -2,7 +2,7 @@
     margin-top:25%;
     margin-bottom:25%;
     color: azure;
-    font-size: 50%;
+    font-size: 15px;
     font-family: Consolas, monaco, monospace;
     margin-left:22%;
     height: 900 px;
@@ -20,8 +20,8 @@
       background-repeat: no-repeat;
       position: relative;
       display: flex;
-      height: 2000px;
-      widht: 1020px;   
+      height: 1600px;
+      widht: 900px;   
       filter : drop-shadow(8px 8px 4px #FAEA10);
       
     }
